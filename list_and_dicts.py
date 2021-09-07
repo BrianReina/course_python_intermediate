@@ -15,7 +15,7 @@ def run():
         "integer_nums": [-1, -2, 3, 0, 1],
         "floating_nums": [1.1, 4.55, 6.43],
     }
-#testing the dictiorary
+#testing the dictionary
     for key, value in super_dict.items():
         print(key, '-',value)
 

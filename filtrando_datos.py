@@ -79,9 +79,21 @@ def run ():
     adults = list(map(lambda worked: worked['name'],adults))
     old_people = list(map(lambda worked: worked | {'old': worked['age'] > 70}, DATA))
 
-    for worked in old_people:
-        print(worked)
+    #Challenge
 
+    # #using filter and map
+    # all_python_devs = list(filter(lambda worked: worked['language'] == 'python', DATA))
+    # all_python_devs = list(map(lambda worked: worked['name'], all_python_devs))
+
+    # all_platzi_workers = list(filter(lambda worked: worked['organization'] == 'Platzi', DATA))
+    # all_platzi_workers = list(map(lambda worked: worked['name'], all_platzi_workers))
+
+    # #using list comprehension
+    # adults = [worked['name'] for worked in DATA if worked['age'] > 18]
+    # old_people = [worked | {'old': worked['age'] > 70} for worked in DATA] 
+
+    for worked in all_platzi_workers:
+        print(worked)
 
 
 if __name__ == '__main__':
